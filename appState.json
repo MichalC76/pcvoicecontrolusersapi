@@ -1,0 +1,134 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "11b2d9dc-af8b-43d9-b18b-68ea2d0c6b04": {
+        "id": "11b2d9dc-af8b-43d9-b18b-68ea2d0c6b04",
+        "parent": null,
+        "name": "PCVoiceControlUsersApi.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "PCVoiceControlUsersApi.py",
+        "cursor": {
+          "lineNumber": 22,
+          "column": 1
+        },
+        "config": {
+          "runtime": "python3.9",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "PCVoiceControlUsersApi"
+        },
+        "triggers": [
+          {
+            "resourceName": "apigCreateUserHandlercreateuserpost",
+            "config": {}
+          }
+        ],
+        "lastUpdated": 1635066342859
+      },
+      "86d69494-7f9c-43c4-a93b-c1cb92c9d014": {
+        "id": "86d69494-7f9c-43c4-a93b-c1cb92c9d014",
+        "parent": null,
+        "name": "requirements.txt",
+        "type": "TEXT_FILE",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "requirements.txt"
+      }
+    },
+    "openFiles": [
+      "11b2d9dc-af8b-43d9-b18b-68ea2d0c6b04"
+    ],
+    "currentFileId": "11b2d9dc-af8b-43d9-b18b-68ea2d0c6b04",
+    "resources": {
+      "apigCreateUserHandlercreateuserpost": {
+        "name": "apigCreateUserHandlercreateuserpost",
+        "type": "API_GATEWAY",
+        "config": {
+          "apiType": 1,
+          "apiMode": 0,
+          "apiName": "CreateUserHandler",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "create_user",
+          "resourcePath": "/create_user",
+          "restMethod": "POST",
+          "proxyIntegration": true,
+          "enableCORS": true,
+          "stageMode": 0,
+          "stageName": "Prod",
+          "mode": 0
+        }
+      },
+      "ddbUsers": {
+        "name": "ddbUsers",
+        "type": "DynamoDB",
+        "config": {
+          "mode": 1,
+          "table": {
+            "arn": "arn:aws:dynamodb:eu-west-1:549731801238:table/Users",
+            "name": "Users",
+            "partitionKey": "email",
+            "partitionKeyType": "S",
+            "hasSortKey": false,
+            "sortKey": "",
+            "sortKeyType": "",
+            "payPerRequest": true,
+            "mode": 1,
+            "secondaryIndexes": {}
+          }
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.16.43",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.9.4",
+    "projectName": "PCVoiceControlUsersApi",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "eu-west-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1635066589942
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "pcvoicecontrolusersapi",
+      "url": "https://github.com/MichalC76/pcvoicecontrolusersapi"
+    }
+  }
+}
